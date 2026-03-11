@@ -72,6 +72,9 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    needs:
+      - build-durable
+      - build-original
     steps:
       - name: Download artifacts
         uses: actions/download-artifact@v8
