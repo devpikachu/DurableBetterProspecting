@@ -34,9 +34,6 @@ component of the version the build is for.
 For example, if version `1.0` of Durable Better Prospecting is built for Vintage Story version `1.21.x`, then the complete version of that mod file will be
 `21.1.0`.
 
-This is very similar to what a lot of Minecraft mods do, and you can read more about
-it [here](https://docs.neoforged.net/docs/gettingstarted/versioning/#including-the-minecraft-version).
-
 
 ## License
 
