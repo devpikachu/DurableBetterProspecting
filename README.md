@@ -23,7 +23,7 @@
 
 ## Vintage Story Mods
 
-Get this mod at https://mods.vintagestory.at/durablebetterprospecting.
+Get this mod at https://mods.vintagestory.at/durablebetterprospecting or https://mods.vintagestory.at/betterprospecting.
 
 
 ## Versioning
