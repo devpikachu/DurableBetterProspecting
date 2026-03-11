@@ -1,6 +1,8 @@
+.DS_Store
 bin/
 obj/
 out/
 run/
 vendor/
+
 *.sln.DotSettings.user

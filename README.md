@@ -4,26 +4,26 @@
     <a title="GPL-3.0" target="_blank" href="https://www.gnu.org/licenses/gpl-3.0.en.html">
         <img alt="License Badge" src="https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg" />
     </a>
-    <img alt="Vintage Story Version Badge" src="https://img.shields.io/badge/vintage--story-1.21.5-%2391A357" />
-    <img alt=".NET Version Badge" src="https://img.shields.io/badge/dotnet-8.0%20%26%209.0-%236F419A" />
-    <a title="CI Pipeline" target="_blank" href="https://ci.omni.ms/repos/4">
-        <img alt="CI Status Badge" src="https://ci.omni.ms/api/badges/4/status.svg" />
+    <img alt="Vintage Story Version Badge" src="https://img.shields.io/badge/vintage--story-1.21.6-%2391A357" />
+    <img alt=".NET Version Badge" src="https://img.shields.io/badge/dotnet-9.0-%236F419A" />
+    <a title="Common.Build" target="_blank" href="https://github.com/devpikachu/Common.Build">
+        <img alt="Common.Build Badge" src="https://img.shields.io/badge/Common.Build-0.6.0-blue" />
     </a>
-    <a title="Latest Release" target="_blank" href="https://git.omni.ms/vintage-story-mods/durable-better-prospecting/releases/latest">
-        <img alt="Latest Release Badge" src="https://img.shields.io/gitea/v/release/vintage-story-mods/durable-better-prospecting?gitea_url=https%3A%2F%2Fgit.omni.ms&sort=semver&display_name=release&style=flat" />
+    <a title="Common.Mod" target="_blank" href="https://github.com/devpikachu/Common.Mod">
+        <img alt="Common.Mod Badge" src="https://img.shields.io/badge/Common.Mod-0.6.2-blue" />
     </a>
-    <h3>Improve your prospecting experience, without removing the difficulty completely.</h3>
+    <a title="CI Pipeline" target="_blank" href="https://github.com/devpikachu/DurableBetterProspecting/actions">
+        <img alt="CI Status Badge" src="https://img.shields.io/github/check-runs/devpikachu/DurableBetterProspecting/main" />
+    </a>
+    <a title="Latest Release" target="_blank" href="https://github.com/devpikachu/DurableBetterProspecting/releases/latest">
+        <img alt="Latest Release Badge" src="https://img.shields.io/github/v/release/devpikachu/DurableBetterProspecting" />
+    </a>
+    <h3>A Vintage Story mod that improves the prospecting experience, without removing difficulty completely.</h3>
 </div>
 
 ## Vintage Story Mods
 
 Get this mod at https://mods.vintagestory.at/durablebetterprospecting.
-
-
-## Reading on GitHub?
-
-This is a read-only mirror of https://git.omni.ms/vintage-story-mods/durable-better-prospecting. Please submit all issues and pull requests there, as this
-repository will not be worked with directly.
 
 
 ## Versioning
@@ -44,7 +44,7 @@ it [here](https://docs.neoforged.net/docs/gettingstarted/versioning/#including-t
 
 The contents of this repository are licensed under the [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) license.
 
-Copyright (C) 2025 Andrei "DetPikachu" Hava.
+Copyright (C) 2025 - 2026 Andrei "DetPikachu" Hava.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

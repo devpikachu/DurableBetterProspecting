@@ -1,64 +1,63 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <OutputPath>bin/$(Configuration)/durablebetterprospecting</OutputPath>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputPath>bin/$(Configuration)/durablebetterprospecting</OutputPath>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
+  <!-- Vendor References -->
   <ItemGroup>
     <Reference Include="VintagestoryAPI">
-      <HintPath>../vendor/VintagestoryAPI.dll</HintPath>
+      <HintPath>../vendor/vs/VintagestoryAPI.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="VintagestoryLib">
-      <HintPath>../vendor/VintagestoryLib.dll</HintPath>
+      <HintPath>../vendor/vs/VintagestoryLib.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="VSEssentials">
-      <HintPath>../vendor/VSEssentials.dll</HintPath>
+      <HintPath>../vendor/vs/Mods/VSEssentials.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="VSSurvivalMod">
-      <HintPath>../vendor/VSSurvivalMod.dll</HintPath>
+      <HintPath>../vendor/vs/Mods/VSSurvivalMod.dll</HintPath>
       <Private>false</Private>
     </Reference>
 
     <Reference Include="protobuf-net">
-      <HintPath>../vendor/protobuf-net.dll</HintPath>
+      <HintPath>../vendor/vs/Lib/protobuf-net.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="SkiaSharp">
-      <HintPath>../vendor/SkiaSharp.dll</HintPath>
+      <HintPath>../vendor/vs/Lib/SkiaSharp.dll</HintPath>
       <Private>false</Private>
     </Reference>
 
     <Reference Include="configlib">
-      <HintPath>../vendor/configlib.dll</HintPath>
+      <HintPath>../vendor/configlib/configlib.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="ImGui.NET">
-      <HintPath>../vendor/ImGui.NET.dll</HintPath>
+      <HintPath>../vendor/vsimgui/ImGui.NET.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="VSImGui">
-      <HintPath>../vendor/VSImGui.dll</HintPath>
+      <HintPath>../vendor/vsimgui/VSImGui.dll</HintPath>
       <Private>false</Private>
     </Reference>
   </ItemGroup>
 
+  <!-- NuGet References -->
   <ItemGroup>
-    <PackageReference Include="Common.Mod" Version="0.6.0"/>
-    <PackageReference Include="Common.Mod.Generator" Version="0.6.0"/>
-    <PackageReference Include="JetBrains.Annotations" Version="2025.2.2">
-      <PrivateAssets>all</PrivateAssets>
-      <ExcludeAssets>runtime</ExcludeAssets>
-    </PackageReference>
+    <PackageReference Include="Common.Mod" Version="0.6.2"/>
+    <PackageReference Include="Common.Mod.Generator" Version="0.6.2"/>
   </ItemGroup>
 
+  <!-- Additional Files -->
   <ItemGroup>
     <Content Include="assets/**">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -69,9 +68,6 @@
     <Content Include="modicon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-
-  <ItemGroup>
     <AdditionalFiles Include="config.json"/>
   </ItemGroup>
 

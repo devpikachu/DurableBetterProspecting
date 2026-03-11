@@ -1,3 +1,9 @@
+## 21.2.1
+**Other**
+- Move to GitHub
+- Upgrade `Common.Build` to `0.6.0`
+- Upgrade `Common.Mod` to `0.6.2`
+
 ## 21.2.0
 **:sparkles: Features**
 - Made each mode variant toggleable ([#10](https://git.omni.ms/vintage-story-mods/durable-better-prospecting/issues/10))
