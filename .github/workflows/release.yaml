@@ -36,7 +36,8 @@ jobs:
         run: bash bootstrap.sh
       - name: Build
         run: |
-          bash build.sh --target Archive --general-project DurableBetterProspecting --general-version $GITHUB_REF_NAME
+          bash build.sh --target Archive --general-config buildConfig.durable.json --general-project DurableBetterProspecting --general-version $GITHUB_REF_NAME
+          bash build.sh --target Archive --general-config buildConfig.original.json --general-project DurableBetterProspecting --general-version $GITHUB_REF_NAME
       - name: Release
         uses: softprops/action-gh-release@v2
         with:

@@ -10,7 +10,6 @@ using Vintagestory.API.Common.Entities;
 using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
 using Vintagestory.API.Util;
-using Vintagestory.Server;
 
 namespace DurableBetterProspecting.Items;
 
@@ -47,7 +46,7 @@ internal class ItemProspectingPick : Vintagestory.GameContent.ItemProspectingPic
     public override int GetToolMode(ItemSlot slot, IPlayer byPlayer, BlockSelection blockSel)
     {
         var skillItemsLength = _modeManager.GetSkillItems().Length;
-        return Math.Clamp(slot.Itemstack.Attributes.GetInt("toolMode"), 0, skillItemsLength - 1);
+        return Math.Clamp(slot.Itemstack?.Attributes.GetInt("toolMode") ?? 0, 0, skillItemsLength - 1);
     }
 
     public override SkillItem[] GetToolModes(ItemSlot slot, IClientPlayer forPlayer, BlockSelection blockSel)
@@ -117,7 +116,8 @@ internal class ItemProspectingPick : Vintagestory.GameContent.ItemProspectingPic
             SampleArea(world, player, blockSel, mode);
         }
 
-        if (DamagedBy is not null && DamagedBy.Contains(EnumItemDamageSource.BlockBreaking))
+        var damagedBy = GetDamagedBy(itemSlot);
+        if (damagedBy is not null && damagedBy.Contains(EnumItemDamageSource.BlockBreaking))
         {
             DamageItem(world, byEntity, itemSlot, damage);
         }

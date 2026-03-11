@@ -1,3 +1,11 @@
+## 22.0.0
+**Features**
+- Vintage Story 1.22 support
+
+**Other**
+- Upgrade `Common.Build` to `0.7.2`
+- Upgrade `Common.Mod` to `0.7.0`
+
 ## 21.2.1
 **Other**
 - Move to GitHub

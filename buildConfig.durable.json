@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/devpikachu/Common.Build/refs/tags/0.7.2/schemas/config.schema.json",
+  "archiveName": "durablebetterprospecting",
+  "defaultProject": "DurableBetterProspecting",
+  "projects": [
+    {
+      "name": "DurableBetterProspecting",
+      "outputSubdirectory": "durablebetterprospecting",
+      "substitutionTargets": [
+        "DurableBetterProspectingSystem.cs",
+        "config.json",
+        "modinfo.json"
+      ]
+    }
+  ],
+  "substitutions": {
+    "%MOD_ID%": "durablebetterprospecting"
+  }
+}

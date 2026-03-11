@@ -10,8 +10,8 @@
 
   <!-- NuGet References -->
   <ItemGroup>
-    <PackageReference Include="Common.Build" Version="0.6.0"/>
-    <PackageReference Include="Common.Build.Generator" Version="0.6.0"/>
+    <PackageReference Include="Common.Build" Version="0.7.2" />
+    <PackageReference Include="Common.Build.Generator" Version="0.7.2" />
   </ItemGroup>
 
   <!-- Additional Files -->
@@ -19,7 +19,8 @@
     <None Include="../.editorconfig"/>
     <None Include="../.gitignore"/>
     <None Include="../build.sh"/>
-    <None Include="../buildConfig.json"/>
+    <None Include="../buildConfig.durable.json"/>
+    <None Include="../buildConfig.original.json"/>
     <None Include="../CHANGELOG.md"/>
     <None Include="../README.md"/>
   </ItemGroup>

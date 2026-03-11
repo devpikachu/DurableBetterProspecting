@@ -1,14 +1,16 @@
 {
   "type": "code",
   "name": "Durable Better Prospecting",
-  "modid": "durablebetterprospecting",
+  "modid": "%MOD_ID%",
   "version": "12.34.56",
   "description": "Improve your prospecting experience, without removing the difficulty completely.",
-  "website": "https://git.omni.ms/vintage-story-mods/durable-better-prospecting",
+  "website": "https://github.com/devpikachu/DurableBetterProspecting",
   "authors": [
     "DetPikachu"
   ],
-  "contributors": [],
+  "contributors": [
+    "JohnVintageStory"
+  ],
   "dependencies": {
     "game": "*"
   }

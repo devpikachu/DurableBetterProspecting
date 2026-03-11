@@ -19,6 +19,11 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - buildConfig.durable.json
+          - buildConfig.original.json
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -38,4 +43,4 @@ jobs:
       - name: Bootstrap
         run: bash bootstrap.sh
       - name: Build
-        run: bash build.sh --target Build --general-project DurableBetterProspecting
+        run: bash build.sh --target Build --general-config ${{ matrix.config }} --general-project DurableBetterProspecting

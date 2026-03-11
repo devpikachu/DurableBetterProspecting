@@ -14,7 +14,7 @@ namespace DurableBetterProspecting;
 [UsedImplicitly]
 public class DurableBetterProspectingSystem : System<DurableBetterProspectingSystem>
 {
-    public override string ModId() => "durablebetterprospecting";
+    public override string ModId() => "%MOD_ID%";
     public override string ModVersion() => "12.34.56";
     public override string ModName() => "Durable Better Prospecting";
 
