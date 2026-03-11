@@ -76,10 +76,18 @@ jobs:
       - build-durable
       - build-original
     steps:
-      - name: Download artifacts
+      - name: Download durable artifact
         uses: actions/download-artifact@v8
+        with:
+          name: durablebetterprospecting
+      - name: Download original artifact
+        uses: actions/download-artifact@v8
+        with:
+          name: betterprospecting
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
           draft: true
-          files: '*.zip'
+          files: |
+            durablebetterprospecting_${{ github.ref_name }}.zip
+            betterprospecting_${{ github.ref_name }}.zip
